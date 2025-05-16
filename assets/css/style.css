@@ -686,6 +686,12 @@ html {
     }
   }
 }
+.contact-us-social {
+  a {
+    font-size: 25px;
+    margin-inline: 8px;
+  }
+}
 /* Code copy pasted till here */
 
 /*
