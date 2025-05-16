@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Website</title>
+    <!-- Styling CSS attached below -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Bootstrap CSS attached below -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Bootstrap icons CDN attached below -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- AOS link attached below -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Component -->
+
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-bg">
+      <span class="navbar-brand ms-3">
+        <img src="assets/images/logos/SerpahineLogo.png" />The Seraphine
+      </span>
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#topNavbar"
+      >
+        <span class="navbar-toggler-icon" style="font-size: 15px"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse me-3 d-lg-flex justify-content-end navbar-width"
+        id="topNavbar"
+      >
+        <ul id="navbar-content" class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./aboutus.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./rooms.html" class="nav-link">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a href="./gallery.html" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Enquiry</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="hero">
+      <h1
+        class="text-center text-capitalize mt-5 mb-5"
+        style="text-decoration: underline"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        place enquiry
+      </h1>
+      <div class="form-container">
+        <form
+          action=""
+          id="enquiry-form"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <label for="">Enter your name</label>
+          <input type="text" name="fname" id="fname" required /><br />
+          <label for="">Enter your phone number</label>
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            maxlength="10"
+            required
+          /><br />
+          <label for="">Enter your mail id</label>
+          <input type="email" name="email" id="email" required /><br />
+          <label for="">Select the location</label>
+          <select name="location" id="location">
+            <option value="null">Select Location</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kolhapur">Kolhapur</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Goa">Goa</option>
+          </select>
+          <br />
+          <label for="">Expected Date for Check-in</label>
+          <input type="date" name="chkIn" id="chkIn" required /><br />
+          <label for="">Select your preferred room type</label>
+          <select name="room" id="room">
+            <option value="null">Select Room</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Premium">Premium</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Suite">Suite</option>
+          </select>
+          <button type="submit" class="btn btn-success mt-4">
+            Place Enquiry
+          </button>
+        </form>
+      </div>
+      <div class="modal fade" id="confirmModal">
+        <div class="modal-dialog modal-dialog-centered" id="modalTable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="text-center">Enquiry Confirmation</h1>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                  <td>Name</td>
+                  <td>${fname.value}</td>
+                </tr>
+                <tr>
+                  <td>Phone</td>
+                  <td>${phone.value}</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>${email.value}</td>
+                </tr>
+                <tr>
+                  <td>Preferred Location</td>
+                  <td>${loc.value}</td>
+                </tr>
+                <tr>
+                  <td>Expected Check In</td>
+                  <td>${dateIn.value}</td>
+                </tr>
+                <tr>
+                  <td>Room type</td>
+                  <td>${roomType.value}</td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-success"
+                id="modalSubmit"
+                data-bs-dismiss="modal"
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="row w-100">
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Find Hotels</a></p>
+          <p><a href="">Events by Seraphine</a></p>
+          <p><a href="">Best Rate Guarantee</a></p>
+          <p><a href="">Plan Your Holidays</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">About Us</a></p>
+          <p><a href="">Company Corporate Profile</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Careers</a></p>
+          <p><a href="">Partner With Us</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Privacy Policy</a></p>
+          <p><a href="">Child Policy</a></p>
+          <p><a href="">Terms & Conditions</a></p>
+          <p><a href="">Contact Us</a></p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <p class="text-center py-4">
+            Copyright &#169; 2025, The Seraphine. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS attached below -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Project JS attached below -->
+    <!-- <script src="assets/js/hotelSite.js"></script> -->
+    <script src="assets/js/enquiryForm.js"></script>
+    <!-- AOS JS attached below  -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      const saveform = () => {
+        alert();
+      };
+    </script>
+  </body>
+</html>

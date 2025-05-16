@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Website</title>
+    <!-- Styling CSS attached below -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Bootstrap CSS attached below -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Bootstrap icons CDN attached below -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- AOS link attached below -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-bg">
+      <span class="navbar-brand ms-3">
+        <img src="assets/images/logos/SerpahineLogo.png" />The Seraphine
+      </span>
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#topNavbar"
+      >
+        <span class="navbar-toggler-icon" style="font-size: 15px"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse me-3 d-lg-flex justify-content-end navbar-width"
+        id="topNavbar"
+      >
+        <ul id="navbar-content" class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./aboutus.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a href="./gallery.html" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="./enquireForm.html" class="nav-link">Enquiry</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="hero">
+      <div class="room-details mt-5">
+        <h1
+          class="text-center mb-5"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          Our Rooms
+        </h1>
+        <div class="row" data-aos="fade-right" data-aos-duration="800">
+          <div class="col-lg-5 room-details-left">
+            <div
+              id="deluxeCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/DRoom1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/DRoom2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/DRoom3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/Droom4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#deluxeCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#deluxeCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-7 room-details-right room-caption">
+            <div class="row">
+              <div class="col-12">
+                <h1>Deluxe Room</h1>
+                <p>
+                  Step into comfort and elegance with the Deluxe Room at Hotel
+                  Seraphine—our thoughtfully designed entry-level retreat.
+                  Perfectly appointed with all essential amenities, this serene
+                  space offers a harmonious blend of style and simplicity. Soft
+                  lighting, plush bedding, and modern conveniences ensure a
+                  restful stay, whether you're here for business or leisure.
+                  Experience refined comfort at its finest, where every detail
+                  is crafted to welcome you warmly. The Deluxe Room is your
+                  ideal sanctuary in the heart of timeless hospitality.
+                </p>
+              </div>
+              <div class="col-12">
+                <div class="facilities-box">
+                  <div class="row p-3" id="top-row" style="border: none">
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/BreakfastLogo.png" alt="" />
+                      <p>Free Breakfast</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logo WIFI.png" alt="" />
+                      <p>Free WiFi</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logo24-h-service.png"
+                        alt=""
+                      />
+                      <p>24hrs Room Service</p>
+                    </div>
+
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logoSecurity-Guard.png"
+                        alt=""
+                      />
+                      <p>High Security</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5" data-aos="fade-left" data-aos-duration="800">
+          <div class="col-lg-7 room-details-right room-caption">
+            <div class="row">
+              <div class="col-12">
+                <h1>Premium Room</h1>
+                <p>
+                  Elevate your stay in the Premium Room at Hotel Seraphine—where
+                  added space meets sophisticated design. This upgraded haven
+                  offers enhanced comfort with refined décor, elegant
+                  furnishings, and modern amenities tailored for relaxation.
+                  Enjoy a tranquil atmosphere, soft textures, and thoughtful
+                  touches that create a sense of understated luxury. Whether
+                  unwinding after a busy day or simply indulging in peaceful
+                  moments, the Premium Room delivers an elevated experience that
+                  balances comfort and charm effortlessly. Discover more with
+                  every stay.
+                </p>
+              </div>
+              <div class="col-12">
+                <div class="facilities-box">
+                  <div class="row p-3" id="top-row" style="border: none">
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/BreakfastLogo.png" alt="" />
+                      <p>Free Breakfast</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logo WIFI.png" alt="" />
+                      <p>Free WiFi</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logo24-h-service.png"
+                        alt=""
+                      />
+                      <p>24hrs Room Service</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logoBAR-1.png" alt="" />
+                      <p>Bar Facility</p>
+                    </div>
+
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logoSecurity-Guard.png"
+                        alt=""
+                      />
+                      <p>High Security</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 room-details-left">
+            <div
+              id="premiumCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/PRoom1.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/PRoom2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/PRoom3.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/PRoom4.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#premiumCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#premiumCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5" data-aos="fade-right" data-aos-duration="800">
+          <div class="col-lg-5 room-details-left">
+            <div
+              id="luxuryCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/LRoom1.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/Lroom2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/Lroom3.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#luxuryCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#luxuryCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-7 room-details-right room-caption">
+            <div class="row">
+              <div class="col-12">
+                <h1>Luxury Room</h1>
+                <p>
+                  Indulge in the exceptional elegance of the Luxury Room at
+                  Hotel Seraphine—where sophistication and serenity meet.
+                  Designed for discerning guests, this spacious sanctuary
+                  features upscale décor, premium furnishings, and an inviting
+                  ambiance that exudes refined comfort. From plush bedding to
+                  elevated amenities, every detail is thoughtfully curated to
+                  enhance your stay. Bask in the quiet charm and elevated style
+                  that define the Seraphine experience. The Luxury Room promises
+                  a stay that is as graceful as it is unforgettable.
+                </p>
+              </div>
+              <div class="col-12">
+                <div class="facilities-box">
+                  <div class="row p-3" id="top-row" style="border: none">
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/BreakfastLogo.png" alt="" />
+                      <p>Free Breakfast</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logo WIFI.png" alt="" />
+                      <p>Free WiFi</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logo24-h-service.png"
+                        alt=""
+                      />
+                      <p>24hrs Room Service</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logoBAR-1.png" alt="" />
+                      <p>Bar Facility</p>
+                    </div>
+
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logoSecurity-Guard.png"
+                        alt=""
+                      />
+                      <p>High Security</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-2 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logoPOOL-1.png" alt="" />
+                      <p>Swimming Pool</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5" data-aos="fade-left" data-aos-duration="800">
+          <div class="col-lg-7 room-details-right room-caption">
+            <div class="row">
+              <div class="col-12">
+                <h1>Suite Room</h1>
+                <p>
+                  Experience the pinnacle of comfort in the Suite at Hotel
+                  Seraphine—an exclusive retreat crafted for those who desire
+                  space, style, and sophistication. Featuring a separate living
+                  area, elegant bedroom, and luxurious amenities, the Suite
+                  offers a seamless blend of functionality and indulgence. Rich
+                  textures, modern finishes, and thoughtful details create an
+                  atmosphere of quiet opulence. Whether for a special occasion
+                  or a lavish escape, the Suite invites you to unwind in
+                  unmatched serenity and timeless elegance.
+                </p>
+              </div>
+              <div class="col-12">
+                <div class="facilities-box">
+                  <div class="row p-3" id="top-row" style="border: none">
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/BreakfastLogo.png" alt="" />
+                      <p>Free Breakfast</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logo WIFI.png" alt="" />
+                      <p>Free WiFi</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logo24-h-service.png"
+                        alt=""
+                      />
+                      <p>24hrs Room Service</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logoBAR-1.png" alt="" />
+                      <p>Bar Facility</p>
+                    </div>
+                  </div>
+                  <div class="row p-3">
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logoGym.png" alt="" />
+                      <p>Free Gym</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logoINDOOR-GAMING.png"
+                        alt=""
+                      />
+                      <p>Indoor Gaming Arena</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/logos/logoSecurity-Guard.png"
+                        alt=""
+                      />
+                      <p>High Security</p>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 d-flex flex-column align-items-center"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src="assets/images/logos/logoPOOL-1.png" alt="" />
+                      <p>Swimming Pool</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 room-details-left">
+            <div
+              id="suiteCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/Sroom1.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/SRoom2.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/SRoom3.avif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="assets/images/room_images/SRoom4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#suiteCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#suiteCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="row w-100">
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Find Hotels</a></p>
+          <p><a href="">Events by Seraphine</a></p>
+          <p><a href="">Best Rate Guarantee</a></p>
+          <p><a href="">Plan Your Holidays</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">About Us</a></p>
+          <p><a href="">Company Corporate Profile</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Careers</a></p>
+          <p><a href="">Partner With Us</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Privacy Policy</a></p>
+          <p><a href="">Child Policy</a></p>
+          <p><a href="">Terms & Conditions</a></p>
+          <p><a href="">Contact Us</a></p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <p class="text-center py-4">
+            Copyright &#169; 2025, The Seraphine. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS attached below -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Project JS attached below -->
+    <!-- <script src="assets/js/hotelSite.js"></script> -->
+    <!-- AOS JS attached below  -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

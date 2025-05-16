@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Website</title>
+    <!-- Styling CSS attached below -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Bootstrap CSS attached below -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Bootstrap icons CDN attached below -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- AOS link attached below -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-bg">
+      <span class="navbar-brand ms-3">
+        <img src="assets/images/logos/SerpahineLogo.png" />The Seraphine
+      </span>
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#topNavbar"
+      >
+        <span class="navbar-toggler-icon" style="font-size: 15px"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse me-3 d-lg-flex justify-content-end navbar-width"
+        id="topNavbar"
+      >
+        <ul id="navbar-content" class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./aboutus.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./rooms.html" class="nav-link">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="./enquireForm.html" class="nav-link">Enquiry</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="hero">
+      <!-- Rooms gallery starts here -->
+      <h1
+        class="text-center mt-5"
+        style="text-decoration: underline"
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
+        Rooms
+      </h1>
+      <div class="gallery-section mt-4 mb-3">
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/room_images/PRoom1.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/room_images/PRoom2.jpg" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/room_images/LRoom1.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/room_images/Lroom3.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/room_images/DRoom3.jpg" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/room_images/Sroom1.avif" alt="" />
+        </div>
+      </div>
+      <!-- Rooms gallery ends here -->
+
+      <!-- Dining Gallery starts here -->
+      <h1
+        class="text-center mt-4 mb-5 text-capitalize"
+        style="text-decoration: underline"
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
+        dining
+      </h1>
+      <div class="gallery-section mb-5">
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Dining2.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Dining5.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Dining1.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Dining6.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Dining3.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Dining4.avif" alt="" />
+        </div>
+      </div>
+
+      <!-- Dining Gallery ends here -->
+      <!-- Facilities Gallery starts here -->
+      <h1
+        class="text-center text-capitalize mt-5 mb-5"
+        style="text-decoration: underline"
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
+        Facilities
+      </h1>
+      <div class="gallery-section mb-5">
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Facilities1.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Facilities2.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Facilities6.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Facilities5.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Facilities3.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Facilities4.avif" alt="" />
+        </div>
+      </div>
+      <!-- Facilities Gallery ends here -->
+      <!-- Premises Gallery starts here -->
+      <h1
+        class="text-center text-capitalize mt-5 mb-5"
+        style="text-decoration: underline"
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
+        Premises
+      </h1>
+      <div class="gallery-premises">
+        <!-- Grid code -->
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Premises3.avif" alt="" />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            src="assets/images/galley-images/Premises1.jpg"
+            alt=""
+            style="position: absolute; top: -80px"
+          />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img
+            src="assets/images/galley-images/Premises2.jpg"
+            alt=""
+            style="position: absolute; top: -80px"
+          />
+        </div>
+        <div
+          class="gallery-section-img"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="assets/images/galley-images/Premises4.avif" alt="" />
+        </div>
+        <!-- Grid code ends here -->
+      </div>
+      <!-- Premises Gallery ends here -->
+    </div>
+    <div class="footer-bar">
+      <div class="row w-100">
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Find Hotels</a></p>
+          <p><a href="">Events by Seraphine</a></p>
+          <p><a href="">Best Rate Guarantee</a></p>
+          <p><a href="">Plan Your Holidays</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">About Us</a></p>
+          <p><a href="">Company Corporate Profile</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Careers</a></p>
+          <p><a href="">Partner With Us</a></p>
+        </div>
+        <div
+          class="col-3 d-flex flex-column justify-content-around d-lg-block text-center"
+        >
+          <p><a href="">Privacy Policy</a></p>
+          <p><a href="">Child Policy</a></p>
+          <p><a href="">Terms & Conditions</a></p>
+          <p><a href="">Contact Us</a></p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <p class="text-center py-4">
+            Copyright &#169; 2025, The Seraphine. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS attached below -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Project JS attached below -->
+    <!-- <script src="assets/js/hotelSite.js"></script> -->
+    <!-- AOS JS attached below  -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
