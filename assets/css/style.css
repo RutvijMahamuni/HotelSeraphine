@@ -644,7 +644,7 @@ html {
   position: relative;
   img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: all ease-out 0.3s;
   }
   img:hover {
@@ -970,5 +970,59 @@ html {
   }
   .footer-bar {
     font-size: 10px;
+  }
+  .gallery-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 150px 150px;
+    .gallery-section-img {
+      /* border: 2px solid black; */
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+  .gallery-premises {
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 50% 50%;
+    .gallery-section-img {
+      height: 150px;
+      /* border: 2px solid red; */
+      img {
+        position: relative;
+        bottom: 0px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+  }
+  .form-container {
+    form {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 48px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: center;
+    }
+    label {
+      text-align: center;
+    }
+    /* input[text],
+  input[date],
+  input[number] {
+    width: 70%;
+    border-radius: 10px;
+  } */
+  }
+  #suitCarousel {
+  }
+  #suite-carousel-inner,
+  #deluxe-carousel-inner,
+  #premium-carousel-inner,
+  #luxury-carousel-inner {
+    height: 400px;
   }
 }
